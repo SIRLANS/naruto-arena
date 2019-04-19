@@ -1,0 +1,38 @@
+deixar charView = {
+  nome :  " " ,
+  descrição :  " " ,
+  anime :  " " ,
+  credit : {
+    autor :  " " ,
+    imagens :  " " ,
+    codificador :  " "
+  }
+};
+
+deixe charBasic = {
+  maxHp :  100 ,
+  categoria : []
+};
+
+deixe charMeta = {
+  id :  " " ,
+  habilidades : [],
+  status : {
+    onAttack : [],
+    onReceive : [],
+    onSkill : [],
+    onState : []
+  }
+};
+
+deixe charMutable = {
+  hp :  100 ,
+  vivo :  verdadeiro
+};
+
+deixe char = {
+  ... charView,
+  ... charBasic,
+  ... charMeta,
+  ... charMutable
+};
